@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+.card {
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  background: #16a34a;
+}
+.card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #16a34a;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+.card button:hover {
+  background: #22c55e;
+  color: white;
+  transform: scale(1.1);
+}
+.card:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,75 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f5fa;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: white;
+    color: #c33764;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    gap: 25px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    color: #1d2671;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

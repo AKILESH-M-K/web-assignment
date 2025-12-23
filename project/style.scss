@@ -1,0 +1,28 @@
+// SASS card style
+$primary-color: #4f46e5;
+
+.sass-card {
+  background: $primary-color;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: $sass-color;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      background: lighten($primary-color, 10%);
+      color: white;
+    }
+  }
+}

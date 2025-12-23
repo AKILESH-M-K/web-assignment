@@ -1,0 +1,27 @@
+// LESS card style
+@less-color: #16a34a;
+
+.less-card {
+  background: @less-color;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: @less-color;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      background: darken(@less-color, 10%);
+      color: white;
+    }
+  }
+}

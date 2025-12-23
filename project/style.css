@@ -1,0 +1,47 @@
+.sass-card {
+  background: #4f46e5;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sass-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #4f46e5;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+.sass-card button:hover {
+  transform: scale(1.1);
+  background: rgb(121.5402843602, 114.7156398104, 235.2843601896);
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
+.less-card {
+  background: #16a34a;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+}
+.less-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #16a34a;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+.less-card button:hover {
+  transform: scale(1.1);
+  background: #107636;
+  color: white;
+}

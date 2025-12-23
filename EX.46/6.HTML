@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Webpage with ARIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav a {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+<nav role="navigation" aria-label="Main Navigation">
+    <a href="#home" tabindex="0">Home</a>
+    <a href="#about" tabindex="0">About</a>
+    <a href="#contact" tabindex="0">Contact</a>
+</nav><hr>
+<main role="main">
+    <h1>Accessible Contact Form</h1>
+    <form aria-label="Contact Form">
+        <div>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" tabindex="0">
+        </div><br>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" tabindex="0">
+        </div><br>
+        <button type="submit" tabindex="0" aria-label="Submit Contact Form">
+            Submit
+        </button>
+    </form>
+</main>
+<p aria-hidden="true">★ ★ ★</p>
+</body>
+</html>

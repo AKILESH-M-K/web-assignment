@@ -1,0 +1,49 @@
+// Variables
+$main-color: #4f46e5;
+$button-hover: #6366f1;
+
+// Mixin for card
+@mixin card-style {
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+// Center the card
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.card {
+  @include card-style;
+  background: $main-color;
+
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: $main-color;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+
+    &:hover {
+      background: $button-hover;
+      color: white;
+      transform: scale(1.1);
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
